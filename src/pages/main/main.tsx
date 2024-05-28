@@ -28,6 +28,7 @@ export default function MainPage() {
                 height: "auto",
                 userSelect: "none",
                 pointerEvents: "none",
+                backgroundColor: "#fff8da",
               }}
             />
           </WindowContent>
