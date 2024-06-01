@@ -4,15 +4,13 @@ import ErrorIMG from "../assets/error.png";
 export default function ErrorWindow(props: {
   title: string;
   message: string;
+  style?: React.CSSProperties;
   buttons: React.ReactNode[];
 }) {
   return (
     <Window
       style={{
-        position: "fixed",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
+        ...props.style,
       }}
     >
       <WindowHeader

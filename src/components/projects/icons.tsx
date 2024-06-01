@@ -19,7 +19,7 @@ export default function ProjectIcons(props: {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        width: "60px",
+        width: "70px",
         overflow: "hidden",
       }}
       id={`${id}`}
@@ -55,9 +55,9 @@ export default function ProjectIcons(props: {
           marginBottom: 20,
           marginTop: 10,
         }}
-        value={props.title}
-        disabled
-      />
+      >
+        {props.title}
+      </Text>
     </div>
   );
 }
@@ -69,16 +69,15 @@ const Image = styled.img`
   width: 50px;
 `;
 
-const Text = styled.input`
+const Text = styled.p`
   &:focus {
     background-color: blue;
-  }
-  &:disabled {
-    color: inherit;
   }
   background-color: transparent;
   border: none;
   outline: none;
-  width: fit-content;
+  word-break: keep-all;
+  width: 70px;
+  height: fit-content;
   text-align: center;
 `;

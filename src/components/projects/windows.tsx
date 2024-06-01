@@ -44,11 +44,17 @@ export default function ProjectWindows(props: {
       <WindowContent>
         <ScrollView
           style={{
+            width: "100%",
             height: "400px",
-            padding: "0 20px ",
           }}
         >
-          {props.contents}
+          <div
+            style={{
+              padding: "0 20px ",
+            }}
+          >
+            {props.contents}
+          </div>
         </ScrollView>
       </WindowContent>
     </Window>

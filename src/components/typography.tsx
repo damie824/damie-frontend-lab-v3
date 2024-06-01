@@ -17,3 +17,12 @@ export const Description = styled.p`
   font-size: 16px;
   word-break: keep-all;
 `;
+
+export const UnorderedList = styled.ul`
+  li {
+    &::before {
+      content: "・";
+      margin-right: 3px;
+    }
+  }
+`;

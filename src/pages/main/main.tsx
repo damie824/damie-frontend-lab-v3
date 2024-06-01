@@ -15,6 +15,7 @@ export default function MainPage() {
         <Window
           style={{
             width: "80%",
+            maxWidth: "500px",
           }}
         >
           <WindowHeader>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import ProjectIcons from "../../components/projects/icons";
 import ProjectWindows from "../../components/projects/windows";
 import ProjectOdin from "./windows/odin";
+import ProjectDphsAdviser from "./windows/dphs-adviser";
 
 export default function Projects() {
   const [isOpened, setIsOpened] = useState(false);
@@ -25,6 +26,13 @@ export default function Projects() {
           }}
         />
       )}
+      <ProjectIcons
+        img="/projects/dphs-adviser.png"
+        title="대평고 학습 도우미"
+        changeWindow={setContents}
+        openWindow={setIsOpened}
+        contents={<ProjectDphsAdviser />}
+      />
       <ProjectIcons
         img="/projects/odin.png"
         title="Odin"

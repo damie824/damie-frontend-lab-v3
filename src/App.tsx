@@ -14,6 +14,8 @@ import Profile from "./pages/me/profile";
 import { useEffect, useState } from "react";
 import DarkmodeToggle from "./components/global/darkmode-toggle";
 import Projects from "./pages/projects/projects";
+import About from "./pages/about/about";
+import WtfPage from "./pages/wtf/wtf";
 
 const GlobalStyles = createGlobalStyle`
   ${styleReset}
@@ -93,9 +95,11 @@ function App() {
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<MainPage />} />
+                <Route path="/about" element={<About />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/now" element={<NowPage />} />
+                <Route path="/wtf" element={<WtfPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>

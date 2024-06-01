@@ -1,5 +1,9 @@
-import { Anchor, Hourglass, Tooltip } from "react95";
-import { Description, Title } from "../../../components/typography";
+import { Anchor, GroupBox, Hourglass, Tooltip } from "react95";
+import {
+  Description,
+  Title,
+  UnorderedList,
+} from "../../../components/typography";
 
 export default function ProjectOdin() {
   return (
@@ -28,9 +32,35 @@ export default function ProjectOdin() {
       <Description>사용자 지정 수수료 정책, 트래커 차단 기능 등</Description>
       <Description>인디 게이머를 위한 여러 정책을 채용했어요.</Description>
       <br />
-      <Description>
-        Http/Range Request 등 여러 기술들이 사용되었어요.
-      </Description>
+      <GroupBox label="기술 스택">
+        <GroupBox label="클라이언트">
+          <UnorderedList>
+            <li>Tauri</li>
+            <li>React.js</li>
+            <li>TypeScript</li>
+            <li>SCSS</li>
+            <li>Rust</li>
+            <li>Discord-RPC</li>
+          </UnorderedList>
+        </GroupBox>
+        <GroupBox
+          style={{
+            marginTop: 20,
+          }}
+          label="서버"
+        >
+          <UnorderedList>
+            <li>Nest.js</li>
+            <li>TypeScript</li>
+            <li>PostgreSQL</li>
+            <li>TypeORM</li>
+            <li>Passport</li>
+            <li>JWT</li>
+            <li>AWS S3</li>
+          </UnorderedList>
+        </GroupBox>
+      </GroupBox>
+      <br />
       <Description>
         자세한 정보는{" "}
         <Anchor href="https://alpha.odin.damie.works" target="_blank">
@@ -38,6 +68,7 @@ export default function ProjectOdin() {
         </Anchor>
         에서 확인하실 수 있어요.
       </Description>
+      <br />
     </>
   );
 }
