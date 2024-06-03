@@ -63,7 +63,7 @@ export default function ProjectOdin() {
       <br />
       <Description>
         자세한 정보는{" "}
-        <Anchor href="https://alpha.odin.damie.works" target="_blank">
+        <Anchor href="https://odinus.shop/" target="_blank">
           여기
         </Anchor>
         에서 확인하실 수 있어요.

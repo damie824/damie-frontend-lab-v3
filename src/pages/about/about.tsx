@@ -45,9 +45,9 @@ export default function About() {
             >
               <UnorderedList>
                 <li>코딩을 좋아하는 고등학생</li>
-                <li>하위</li>
-                <li>하위</li>
-                <li>하위</li>
+                <li>{new Date().getFullYear() - 2022}년차 소프트웨어 개발자</li>
+                <li>{new Date().getFullYear() - 2024}년차 블로거</li>
+                <li>풀스택 엔지니어</li>
               </UnorderedList>
             </GroupBox>
 
@@ -81,7 +81,12 @@ export default function About() {
             </GroupBox>
 
             {/** 서비스들 */}
-            <GroupBox label="서비스">
+            <GroupBox
+              style={{
+                marginTop: 20,
+              }}
+              label="서비스"
+            >
               {/** 운영중인 사이트들 */}
               <GroupBox
                 style={{
@@ -110,9 +115,7 @@ export default function About() {
               >
                 <UnorderedList>
                   <li>
-                    <Anchor href="https://alpha.odin.damie.works/">
-                      프로젝트 오딘
-                    </Anchor>
+                    <Anchor href="https://odinus.shop/">프로젝트 오딘</Anchor>
                   </li>
                   <li>DPUS</li>
                 </UnorderedList>
